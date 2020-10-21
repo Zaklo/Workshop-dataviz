@@ -1,0 +1,9 @@
+{
+  "name": "dataviz",
+  "version": "1.0.0",
+  "dependencies": {
+    "convert-csv-to-array": "^1.0.3",
+    "csv-parser": "^2.3.3",
+    "d3": "^6.2.0"
+  }
+}
