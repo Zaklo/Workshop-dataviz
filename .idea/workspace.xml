@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a84d0a9-3218-48f0-85ae-258dc5e36a67" name="Default Changelist" comment="" />
+    <list default="true" id="7a84d0a9-3218-48f0-85ae-258dc5e36a67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +19,9 @@
         <option value="package.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -32,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.12.68" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.69" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
@@ -59,7 +65,9 @@
       <workItem from="1603182791526" duration="2079000" />
       <workItem from="1603186345539" duration="11635000" />
       <workItem from="1603264954591" duration="142000" />
-      <workItem from="1603265151661" duration="7857000" />
+      <workItem from="1603265151661" duration="9538000" />
+      <workItem from="1603276088360" duration="2000" />
+      <workItem from="1603279368123" duration="9905000" />
     </task>
     <servers />
   </component>
@@ -87,9 +95,9 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="594" y="315" width="604" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603197596244" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1603273958402">
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1603288232603">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603273958402" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603288232603" />
   </component>
 </project>
