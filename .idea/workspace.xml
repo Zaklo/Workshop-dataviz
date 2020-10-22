@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a84d0a9-3218-48f0-85ae-258dc5e36a67" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/Mark Simonson - Proxima Nova Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Rajdhani-Light.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Avenir-Black-03.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/HurmeGeometricSans1_Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/SharpGrotesk-Book20.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/movies.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +51,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -67,7 +73,9 @@
       <workItem from="1603264954591" duration="142000" />
       <workItem from="1603265151661" duration="9538000" />
       <workItem from="1603276088360" duration="2000" />
-      <workItem from="1603279368123" duration="9905000" />
+      <workItem from="1603279368123" duration="11298000" />
+      <workItem from="1603296327437" duration="2777000" />
+      <workItem from="1603349236320" duration="8093000" />
     </task>
     <servers />
   </component>
@@ -75,10 +83,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603198992285">
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603296369755">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1603198992285" />
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1603296369755" />
     <state x="543" y="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603267742979">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -91,10 +99,14 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1603195940197" />
-    <state x="594" y="315" width="604" height="490" key="find.popup" timestamp="1603197596244">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1603296734449">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="594" y="315" width="604" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603197596244" />
+    <state width="500" height="445" key="SwitcherDM/0.0.1792.1120@0.0.1792.1120" timestamp="1603296734449" />
+    <state x="594" y="315" width="604" height="490" key="find.popup" timestamp="1603292574188">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="594" y="315" width="604" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603292574188" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1603288232603">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
