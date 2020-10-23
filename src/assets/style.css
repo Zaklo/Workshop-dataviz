@@ -7,14 +7,7 @@ html, body {
     font-family: 'Rajdhani', sans-serif;
 }
 
-.loading {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, 0%);
-}
-
-.phone-message{
+.phone-message {
     display: none;
 }
 
@@ -27,7 +20,7 @@ html, body {
         z-index: 1000;
     }
 
-    .phone-message{
+    .phone-message {
         display: block;
         top: 50%;
         left: 50%;

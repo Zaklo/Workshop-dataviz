@@ -1,18 +1,15 @@
 const file = 'src/assets/movies.json';
+const tabMois = ['juillet', 'juin', 'mai', 'avril', 'mars', 'février', 'janvier', 'décembre', 'novembre', 'octobre', 'septembre', 'août']
+const angleText = [180, 150, 120, 90, 60, 30, 0, 330, 300, 270, 240, 210];
+
 let movies = [];
 let dates = [];
 let titles = [];
 let formatedMovies = []
-let ProximaFont, RajdhaniFont;
-let MAX_LENGTH_TITLE
-let angle, r, step, angle1;
-let tabMois = ['juillet', 'juin', 'mai', 'avril', 'mars', 'février', 'janvier', 'décembre', 'novembre', 'octobre', 'septembre', 'août']
+let angle, r, step, angle1, ProximaFont, RajdhaniFont, MAX_LENGTH_TITLE, cam
 let positionAnne = []
 let pos = 6000
-let cam, alphaColor = 0;
-let rotateVar;
-let alpha = 255;
-let angleText = [180, 150, 120, 90, 60, 30, 0, 330, 300, 270, 240, 210];
+let alphaColor = 0;
 
 function preload() {
     movies = loadJSON(file, () => {
@@ -23,18 +20,22 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight, WEBGL);
+    createCanvas(windowWidth, windowHeight, WEBGL);
     cam = createCamera();
     cam.move(0, 0, 7600)
 
+    //variables for circular calendar
     r = 600;
     angle1 = 0;
     step = TWO_PI / 12;
 
-    let filterMovies = Object.values(movies).filter((entry) => entry.release_date)
-    let sortedMovies = filterMovies.sort((a, b) => new Date(a.release_date) < new Date(b.release_date))
+    let filterMovies = Object.values(movies).filter((entry) => {
+        return entry.release_date.length > 0
+    })
 
-    for (let i = 0; i < sortedMovies.length; i++) {
+    filterMovies.sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
+
+    for (let i = 0; i < filterMovies.length; i++) {
         const dateIndex = dates.indexOf(movies[i].release_date)
         if (dateIndex > -1) {
             titles[dateIndex].push(`${movies[i].title}`)
@@ -44,16 +45,15 @@ function setup() {
         }
     }
 
-    formatedMovies = dates.map((entry, currentIndex) => {
+    formatedMovies = dates.filter(entry => entry).map((entry, currentIndex) => {
         return {
             date: entry,
             titles: titles[currentIndex]
         }
     })
 
-    formatedMovies.sort((a, b) => new Date(a.date) < new Date(b.date))
-
-    for (let i = 0; i < 150; i++) {
+    formatedMovies.sort((a, b) => new Date(b.date) - new Date(a.date))
+    for (let i = 0; i < formatedMovies.length; i++) {
         let temp = formatedMovies[i].titles.length;
         if (MAX_LENGTH_TITLE < temp || MAX_LENGTH_TITLE === undefined) MAX_LENGTH_TITLE = temp
     }
@@ -61,7 +61,7 @@ function setup() {
     let startDate = 2015;
 
     for (let i = 0; i < formatedMovies.length; i++) {
-        if (formatedMovies[i].date.substr(0, 4) == startDate) {
+        if (formatedMovies[i].date.indexOf(startDate) > -1) {
             positionAnne.push(i - 1)
             startDate -= 1
         }
@@ -71,7 +71,6 @@ function setup() {
 function draw() {
     smooth()
     background('#0c0c0c');
-
 
     fill(255)
     textSize(50)
@@ -102,13 +101,13 @@ function draw() {
     push()
     textFont(RajdhaniFont)
     translate(0, 0, pos)
-    text('Sortie de films, le long d\'une année',  600, 500, 400)
+    text('Sortie de films, le long d\'une année', 600, 500, 400)
     pop()
 
     push()
     noFill()
     translate(575, 430, pos)
-    rect(0,0,400,170)
+    rect(0, 0, 400, 170)
     pop()
 
     fill('#F5DCA1')
@@ -117,6 +116,14 @@ function draw() {
     textFont(RajdhaniFont)
     translate(0, 0, pos)
     text('Antoine Lozach & Victor Soulié', -width - 400, height + 70, 1100)
+    pop()
+
+    fill(255)
+    textSize(50)
+    push()
+    textFont(RajdhaniFont)
+    translate(0, 0, pos)
+    text('Source : Kaggle.com', -width - 400, height + 140, 1100)
     pop()
 
     fill('#F5DCA1')
@@ -151,7 +158,7 @@ function draw() {
     drawCircleGraph(positionAnne[4], positionAnne[5], -6400, "2011")
 
     textSize(50)
-    fill(245, 220, 161,alphaColor - 500)
+    fill(245, 220, 161, alphaColor - 500)
     push()
     textFont(RajdhaniFont)
     translate(0, 0, pos - 9000)
@@ -164,7 +171,6 @@ function drawCircleGraph(min, max, z, annee) {
     let mx = 7000;
     let mn = 6000;
     alphaColor = ((pos + z) - mn) / (mx - mn) * 255
-    console.log(alphaColor)
     fill(255, alphaColor)
     textFont(RajdhaniFont)
     textSize(50)
@@ -190,12 +196,8 @@ function drawCircleGraph(min, max, z, annee) {
     }
     pop()
 
-
     noFill()
     beginShape();
-    //rotate(-.29)
-    //rotateVar = (pos+z) * .000027 - mn / (mx - mn) * .00001
-    //rotate(rotateVar)
     for (let i = min; i < max; i++) {
         let nbTitles = formatedMovies[i].titles.length
         angle = map(i, min, max - 1, 0, TWO_PI)
@@ -204,9 +206,10 @@ function drawCircleGraph(min, max, z, annee) {
         let y = R * sin(angle)
         vertex(x, y, z + pos)
     }
-    endShape(CLOSE);
-}
 
+    endShape(CLOSE);
+
+}
 
 function mouseWheel(event) {
     pos += event.delta;
@@ -218,3 +221,4 @@ function mouseWheel(event) {
         pos = 16000
     }
 }
+

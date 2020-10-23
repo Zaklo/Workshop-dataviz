@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a84d0a9-3218-48f0-85ae-258dc5e36a67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logo.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style.css" afterDir="false" />
@@ -41,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.12.69" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
@@ -73,7 +72,9 @@
       <workItem from="1603276088360" duration="2000" />
       <workItem from="1603279368123" duration="11298000" />
       <workItem from="1603296327437" duration="2777000" />
-      <workItem from="1603349236320" duration="20360000" />
+      <workItem from="1603349236320" duration="21299000" />
+      <workItem from="1603388282553" duration="379000" />
+      <workItem from="1603438942515" duration="6506000" />
     </task>
     <servers />
   </component>
@@ -105,13 +106,13 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1792.1120@0.0.1792.1120" timestamp="1603367441191" />
-    <state x="594" y="315" width="604" height="490" key="find.popup" timestamp="1603376313112">
+    <state x="594" y="315" width="604" height="490" key="find.popup" timestamp="1603446961175">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="594" y="315" width="604" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603376313112" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1603288232603">
+    <state x="594" y="315" width="604" height="490" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603446961175" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1603439780709">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603288232603" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1603439780709" />
   </component>
 </project>
